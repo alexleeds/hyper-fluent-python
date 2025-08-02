@@ -1,0 +1,6 @@
+site_name: Fluent Python Study
+nav:
+  - Home: index.md
+docs_dir: docs
+theme:
+  name: material
