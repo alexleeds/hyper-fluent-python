@@ -1,7 +1,6 @@
 # Fluent Python Learning Skeleton
 
-This repository scaffolds a literate, test‑driven journey through *Fluent Python* (2nd ed.) with strong typing,
-property‑based tests, live debugging notebooks, and Rust ports for performance contrast.
+This repository scaffolds a literate, test‑driven journey through *Fluent Python* (2nd ed.) with strong typing, property‑based tests, live debugging notebooks, and Rust ports for performance contrast.
 
 | Path | Purpose |
 |------|---------|
