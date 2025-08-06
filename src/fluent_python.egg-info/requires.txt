@@ -1,0 +1,14 @@
+
+[dev]
+black
+isort
+pytest
+pytest-benchmark
+hypothesis
+mypy
+typeguard
+ruff
+rich
+ipython
+jupyterlab
+jupyterlab-debugger
