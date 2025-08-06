@@ -1,0 +1,4 @@
+# file: /Users/aleeds/code/hyper-fluent-python/src/fluent_python/ch01_data_model/french_deck.py
+# hypothesis_version: 6.136.6
+
+['10', '2', '3', '4', '5', '6', '7', '8', '9', 'Ace', 'Clubs', 'Diamonds', 'Hearts', 'Jack', 'King', 'Queen', 'Spades', '__main__', 'hello', 'invalid', 'suit']

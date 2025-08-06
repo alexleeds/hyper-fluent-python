@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/fluent_python/__init__.py
+src/fluent_python.egg-info/PKG-INFO
+src/fluent_python.egg-info/SOURCES.txt
+src/fluent_python.egg-info/dependency_links.txt
+src/fluent_python.egg-info/requires.txt
+src/fluent_python.egg-info/top_level.txt
+src/fluent_python/ch01_data_model/__init__.py
+src/fluent_python/ch01_data_model/french_deck.py
+src/fluent_python/ch01_data_model/vector.py
+tests/test_placeholder.py

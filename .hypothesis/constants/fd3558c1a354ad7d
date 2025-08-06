@@ -1,0 +1,4 @@
+# file: /Users/aleeds/code/hyper-fluent-python/src/fluent_python/ch01_data_model/__init__.py
+# hypothesis_version: 6.136.6
+
+['Card', 'FrenchDeck', 'Rank', 'Suit', 'Vector']

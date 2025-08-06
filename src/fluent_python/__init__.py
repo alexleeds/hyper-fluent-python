@@ -2,4 +2,6 @@
 
 from typing import List
 
-__all__: List[str] = []
+from .ch01_data_model import Card, FrenchDeck, Rank, Suit, Vector
+
+__all__: List[str] = ["Card", "FrenchDeck", "Rank", "Suit", "Vector"]
