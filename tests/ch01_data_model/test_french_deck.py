@@ -16,7 +16,7 @@ import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
-from fluent_python.ch01_data_model.french_deck import (
+from fluent_python.ch01_data_model.robust.french_deck import (
     Card,
     FrenchDeck,
     Rank,

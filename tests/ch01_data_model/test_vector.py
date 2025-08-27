@@ -14,7 +14,10 @@ import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
-from fluent_python.ch01_data_model.vector import Vector, demonstrate_vector_operations
+from fluent_python.ch01_data_model.robust.vector import (
+    Vector,
+    demonstrate_vector_operations,
+)
 
 
 class TestVector:

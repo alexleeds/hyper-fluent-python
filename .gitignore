@@ -8,3 +8,13 @@ dist/
 .ruff_cache/
 .venv/
 venv/
+
+# IDE and editor files
+.claude/
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Hypothesis cache
+.hypothesis/
