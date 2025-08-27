@@ -27,5 +27,8 @@ disallow_untyped_defs = true
 warn_return_any = true
 strict_optional = true
 
+# Exclude original implementations and debugging exercises (intentionally untyped)
+exclude = "(?x)(src/fluent_python/.*/original/|src/fluent_python/.*/exercises/|tests/.*/test_original_)"
+
 [tool.ruff]
 line-length = 100
