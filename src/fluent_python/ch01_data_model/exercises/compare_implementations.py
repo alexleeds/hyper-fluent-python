@@ -24,7 +24,9 @@ from fluent_python.ch01_data_model.original.french_deck import (  # noqa: E402
 from fluent_python.ch01_data_model.robust.french_deck import (  # noqa: E402
     Card as RobustCard,
 )
-from fluent_python.ch01_data_model.robust.french_deck import FrenchDeck as RobustDeck  # noqa: E402
+from fluent_python.ch01_data_model.robust.french_deck import (  # noqa: E402
+    FrenchDeck as RobustDeck,
+)
 from fluent_python.ch01_data_model.robust.french_deck import (  # noqa: E402
     Rank,
     Suit,
