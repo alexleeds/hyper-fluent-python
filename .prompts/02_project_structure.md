@@ -24,7 +24,18 @@ hyper-fluent-python/
 │   └── ...                     # Pattern continues for all chapters
 ├── tests/                       # Comprehensive test suite
 ├── notebooks/                   # Jupyter notebooks for exploration
-├── rust/                        # Rust implementations for comparison
+├── rust/                        # High-performance Rust implementations
+│   ├── Cargo.toml               # Rust project configuration
+│   ├── Cargo.lock               # Dependency lock file
+│   ├── src/
+│   │   ├── lib.rs               # Main Rust library entry point
+│   │   ├── ch01_data_model.rs   # Chapter modules
+│   │   └── ch01_data_model/
+│   │       ├── french_deck.rs   # Rust FrenchDeck implementation
+│   │       └── vector.rs        # Rust Vector implementation
+│   ├── examples/
+│   │   └── demo.rs              # Interactive demonstrations
+│   └── benches/                 # Criterion.rs benchmarks (future)
 ├── benchmarks/                  # Performance analysis scripts
 └── docs/                        # Documentation and insights
 ```
@@ -70,7 +81,87 @@ src/fluent_python/chXX_topic/
 3. **Debugging Focus**: Dedicated exercises/ directory for learning scripts
 4. **AI Integration**: Designated space for AI-generated extensions
 5. **Testing**: Parallel test structure mirrors source organization
-6. **Performance**: Rust comparisons organized by chapter
+6. **Performance**: Rust implementations provide high-performance comparisons
+7. **Language Learning**: Side-by-side Python/Rust demonstrates different paradigms
+8. **Memory Safety**: Rust implementations showcase zero-cost abstractions
+9. **Type Safety**: Compare Python's gradual typing with Rust's compile-time guarantees
+10. **Ecosystem Integration**: Demonstrates how concepts translate across languages
+
+## Rust Implementation Structure
+
+### Rust Project Organization
+
+The `rust/` directory contains high-performance Rust implementations that demonstrate:
+- **Memory safety** without garbage collection
+- **Zero-cost abstractions** with compile-time optimization
+- **Pattern matching** with exhaustive enum checking
+- **Trait-based polymorphism** and operator overloading
+
+```
+rust/
+├── Cargo.toml                   # Dependencies: serde, rand, thiserror, criterion
+├── Cargo.lock                   # Exact dependency versions (committed)
+├── src/
+│   ├── lib.rs                   # Main library with re-exports
+│   ├── ch01_data_model.rs       # Chapter 1 module definitions
+│   └── ch01_data_model/
+│       ├── french_deck.rs       # Complete deck implementation
+│       │   ├── Suit enum        # Spades, Hearts, Diamonds, Clubs
+│       │   ├── Rank enum        # Two through Ace with numeric values
+│       │   ├── Card struct      # Rank + Suit with ordering
+│       │   ├── FrenchDeck       # 52-card deck with full API
+│       │   └── spades_high_rank # Ranking function matching Python
+│       └── vector.rs            # 2D vector mathematics
+│           ├── Vector struct    # x, y components
+│           ├── VectorError      # Custom error types with thiserror
+│           ├── Arithmetic ops   # Add, Sub, Mul, Neg traits
+│           ├── Advanced math    # dot, cross, normalize, project
+│           └── Utilities        # distance, angle, lerp, rotation
+├── examples/
+│   └── demo.rs                  # Interactive demonstration
+│       ├── French Deck demo     # Card creation, shuffling, ranking
+│       └── Vector demo          # Arithmetic, advanced operations
+├── tests/                       # Integrated in source files
+│   └── 23 comprehensive tests   # All passing with full coverage
+└── target/                      # Build artifacts (gitignored)
+    └── debug/                   # Development builds
+```
+
+### Rust Implementation Highlights
+
+**FrenchDeck Features:**
+- **Type-safe enums** with explicit numeric values
+- **Iterator traits** for seamless `for` loops and functional programming
+- **Index operator** overloading for `deck[i]` syntax
+- **Shuffling** with cryptographically secure randomness
+- **Ranking functions** matching Python spades-high example
+- **Memory efficient** with compile-time known sizes
+
+**Vector Features:**
+- **Operator overloading** for natural mathematical syntax (`v1 + v2`)
+- **Advanced mathematics**: dot/cross products, normalization, projection
+- **Geometric operations**: rotation, distance, angle calculation
+- **Utility functions**: linear interpolation, component operations
+- **Robust error handling** with custom error types
+- **Floating-point precision** handling for edge cases
+
+**Development Workflow:**
+```bash
+# Run all tests
+cargo test
+
+# Run interactive demo
+cargo run --example demo
+
+# Check code quality
+cargo clippy
+
+# Format code
+cargo fmt
+
+# Build optimized release
+cargo build --release
+```
 
 ## File Naming Conventions
 
